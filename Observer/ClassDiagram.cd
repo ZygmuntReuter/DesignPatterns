@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Observer logic encapsulated in EventClass,&#xD;&#xA;avoiding inheritance if no necessary">
+    <Position X="0.5" Y="3.492" Height="0.642" Width="3.458" />
+  </Comment>
+  <Comment CommentText="Classical approach">
+    <Position X="0.5" Y="0.5" Height="0.325" Width="3.458" />
+  </Comment>
+  <Class Name="IObserver" Collapsed="true">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassicObserver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ISubject" Collapsed="true">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAIAAEABAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassicObserver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Subject" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQAAQAAAAAAIAAAAAAAAAAYAABADAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassicObserver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Observer" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAAAAAAAAASAkABAAAAAAAAAABAAAAAAAAACAA=</HashCode>
+      <FileName>ClassicObserver.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="subject_" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="`anonymous-namespace'::Subject" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAgAAAAEAAAAAABAAAAAAAAABABAA=</HashCode>
+      <FileName>EventExample.cpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="OnLanding" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="functional::Event&lt;CallableT, ContainerT&gt;" Collapsed="true">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Event.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
