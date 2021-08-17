@@ -1,9 +1,7 @@
 #include <iostream>
 #include <vector>
 
-
-#include "Concept.h"
-
+#include "VehicleConcept.h"
 
 struct  Car
 {
@@ -22,7 +20,7 @@ struct  Truck
 	}
 };
 
-std::vector<idea::VehicleConcept> vehicles;
+std::vector<VehicleConcept> vehicles;
 
 int main() 
 {

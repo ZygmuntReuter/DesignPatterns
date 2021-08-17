@@ -23,8 +23,5 @@
     <ClInclude Include="VehicleConcept.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Concept.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
