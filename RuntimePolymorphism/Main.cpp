@@ -7,9 +7,10 @@ struct  Car
 {
 	void Accelerate()
 	{
-		std::cout << "Car do ziuuummmm"  << std::endl;
+		std::cout << "anyNumber = " << anyNumber << std::endl;
 	}
 
+	int anyNumber = 0;
 };
 
 struct  Truck
@@ -24,18 +25,26 @@ std::vector<VehicleConcept> vehicles;
 
 int main() 
 {
-	
-	Car c;
-	vehicles.emplace_back(c);
+	vehicles.reserve(10);
 
-	Truck t;
-	vehicles.emplace_back(t);
+	Car c { 1 };
+	for (int i = 0; i < 5; ++i)
+		vehicles.emplace_back(c);
+
+	for (int i = 10; i < 15; ++i) 
+		vehicles.emplace_back(Car{i});
+
+	c.anyNumber = 67;
+
+	for (auto& v : vehicles)
+		v.Accelerate();
+
+	std::reverse(vehicles.begin(), vehicles.end());
 
 	for (auto& v : vehicles)
 		v.Accelerate();
 	
 	
-
 	std::cin.get();
 	return 0;
 
