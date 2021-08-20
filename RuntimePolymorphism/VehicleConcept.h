@@ -23,7 +23,8 @@ private:
 		virtual ~Iconcept() = default;
 	};
 
-	template<typename InternalType> struct Concept final : public Iconcept
+	template<typename InternalType> 
+	struct Concept final : public Iconcept
 	{
 		Concept(InternalType& obj) :
 			_internal(obj) 
