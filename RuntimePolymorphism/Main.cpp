@@ -1,48 +1,59 @@
 #include <iostream>
 #include <vector>
 
-#include "VehicleConcept.h"
+#include "Drawable.h"
 
-struct  Car
+struct  X
 {
-	void Accelerate()
+	void Draw()
 	{
-		std::cout << "anyNumber = " << anyNumber << std::endl;
-	}
-
-	int anyNumber = 0;
-};
-
-struct  Truck
-{
-	void Accelerate()
-	{
-		std::cout << "truck do brum brum" << std::endl;
+		std::cout << "X::Draw()"  << std::endl;
 	}
 };
 
-std::vector<VehicleConcept> vehicles;
+struct  Y
+{
+	void Draw()
+	{
+		std::cout << "Y::Draw()" << std::endl;
+	}
+};
+
+struct Any 
+{
+	int i = 45;
+	float f = 5.6f;
+	
+	void Draw() 
+	{
+		std::cout << "i = " << i << " ,f = " << f << std::endl;
+ 	}
+
+	void foo() {}
+};
+
+std::vector<Drawable> document;
 
 int main() 
 {
-	vehicles.reserve(10);
+	document.reserve(10);
 
-	Car c { 1 };
-	for (int i = 0; i < 5; ++i)
-		vehicles.emplace_back(c);
+	X x;
+	document.push_back(x);
 
-	for (int i = 10; i < 15; ++i) 
-		vehicles.emplace_back(Car{i});
+	Y y;
+	document.push_back(y);
 
-	c.anyNumber = 67;
+	Any any{3, 3.14f};
+	document.push_back(any);
 
-	for (auto& v : vehicles)
-		v.Accelerate();
 
-	std::reverse(vehicles.begin(), vehicles.end());
+	std::reverse(document.begin(), document.end());
 
-	for (auto& v : vehicles)
-		v.Accelerate();
+	for (auto& d : document)
+		d.Draw();
+
+
 	
 	
 	std::cin.get();
