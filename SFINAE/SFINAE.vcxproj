@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{457c2cfb-1e79-422c-8024-20c315e9d015}</ProjectGuid>
-    <RootNamespace>RuntimePolymorphism</RootNamespace>
+    <ProjectGuid>{4ecb62f2-139a-4f88-963b-26680a000d03}</ProjectGuid>
+    <RootNamespace>SFINAE</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,12 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Drawable.h" />
-    <ClInclude Include="TypeTraits.h" />
-    <ClInclude Include="VehicleConcept.h" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

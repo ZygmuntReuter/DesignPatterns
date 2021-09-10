@@ -2,12 +2,18 @@
 #include <vector>
 
 #include "Drawable.h"
+#include <vector>
 
 struct  X
 {
 	void Draw()
 	{
 		std::cout << "X::Draw()"  << std::endl;
+	}
+
+	void Draw2()
+	{
+		std::cout << "X::Draw2()" << std::endl;
 	}
 };
 
@@ -17,6 +23,8 @@ struct  Y
 	{
 		std::cout << "Y::Draw()" << std::endl;
 	}
+
+
 };
 
 struct Any 
@@ -52,6 +60,11 @@ int main()
 
 	for (auto& d : document)
 		d.Draw();
+
+	endl(std::cout);
+
+	for (auto& d : document)
+		d.Draw2();
 
 
 	

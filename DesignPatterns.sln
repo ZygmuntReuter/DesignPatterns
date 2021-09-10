@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Observer", "Observer\Observ
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RuntimePolymorphism", "RuntimePolymorphism\RuntimePolymorphism.vcxproj", "{457C2CFB-1E79-422C-8024-20C315E9D015}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SFINAE", "SFINAE\SFINAE.vcxproj", "{4ECB62F2-139A-4F88-963B-26680A000D03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{457C2CFB-1E79-422C-8024-20C315E9D015}.Release|x64.Build.0 = Release|x64
 		{457C2CFB-1E79-422C-8024-20C315E9D015}.Release|x86.ActiveCfg = Release|Win32
 		{457C2CFB-1E79-422C-8024-20C315E9D015}.Release|x86.Build.0 = Release|Win32
+		{4ECB62F2-139A-4F88-963B-26680A000D03}.Debug|x64.ActiveCfg = Debug|x64
+		{4ECB62F2-139A-4F88-963B-26680A000D03}.Debug|x64.Build.0 = Debug|x64
+		{4ECB62F2-139A-4F88-963B-26680A000D03}.Debug|x86.ActiveCfg = Debug|Win32
+		{4ECB62F2-139A-4F88-963B-26680A000D03}.Debug|x86.Build.0 = Debug|Win32
+		{4ECB62F2-139A-4F88-963B-26680A000D03}.Release|x64.ActiveCfg = Release|x64
+		{4ECB62F2-139A-4F88-963B-26680A000D03}.Release|x64.Build.0 = Release|x64
+		{4ECB62F2-139A-4F88-963B-26680A000D03}.Release|x86.ActiveCfg = Release|Win32
+		{4ECB62F2-139A-4F88-963B-26680A000D03}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
